@@ -1,0 +1,85 @@
+    _                _                      
+   / \   ___ ___ ___| | ___ _ __ __ _ _   _ 
+  / _ \ / __/ __/ _ \ |/ _ \ '__/ _` | | | |
+ / ___ \ (_| (_|  __/ |  __/ | | (_| | |_| |
+/_/   \_\___\___\___|_|\___|_|  \__, |\__, |
+                                |___/ |___/ 
+
+Info: generating outputs according to the following specified output flags... 
+ Please use the -f flag to update the preference (default to all output files) 
+{'ERT': 1, 'ERT_summary': 1, 'ART': 1, 'ART_summary': 1, 'energy_estimation': 1, 'flattened_arch': 1}
+Info: config file located: /home/workspace/.config/accelergy/accelergy_config.yaml 
+config file content: 
+ {'compound_components': [], 'estimator_plug_ins': ['/usr/local/share/accelergy/estimation_plug_ins'], 'primitive_components': ['/usr/local/share/accelergy/primitive_component_libs'], 'table_plug_ins': {'roots': ['/usr/local/share/accelergy/estimation_plug_ins/accelergy-table-based-plug-ins/set_of_table_templates', '/home/workspace/lab4/PIM_estimation_tables']}, 'version': 0.3}
+Warn: Cannot recognize the top key "architecture_constraints" in file tmp-accelergy.yaml 
+Warn: Cannot recognize the top key "mapper" in file tmp-accelergy.yaml 
+Warn: Cannot recognize the top key "mapspace_constraints" in file tmp-accelergy.yaml 
+Warn: Cannot recognize the top key "problem" in file tmp-accelergy.yaml 
+Info: Parsing file tmp-accelergy.yaml for architecture info 
+Info: Found non-numeric expression 45nm. Available bindings: {'technology': '45nm'} 
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'technology': '45nm'}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'technology': '45nm'}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'attributes': {'block-size': 1, 'memory_depth': 12, 'memory_width': 16, 'meshX': 14, 'read_bandwidth': 2, 'word-bits': 16, 'write_bandwidth': 2, 'technology': '45nm'}, 'class': 'smartbuffer_RF', 'name': 'ifmap_spad'}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'attributes': {'block-size': 1, 'memory_depth': 192, 'memory_width': 16, 'meshX': 14, 'read_bandwidth': 2, 'word-bits': 16, 'write_bandwidth': 2, 'technology': '45nm'}, 'class': 'smartbuffer_RF', 'name': 'weights_spad'}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'attributes': {'block-size': 1, 'memory_depth': 16, 'memory_width': 16, 'meshX': 14, 'read_bandwidth': 2, 'update_fifo_depth': 2, 'word-bits': 16, 'write_bandwidth': 2, 'technology': '45nm'}, 'class': 'smartbuffer_RF', 'name': 'psum_spad'}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'attributes': {'datawidth': 16, 'meshX': 14, 'technology': '45nm'}, 'class': 'intmac', 'name': 'mac'}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'attributes': {'block-size': 4, 'memory_depth': 16384, 'memory_width': 64, 'n_banks': 32, 'read_bandwidth': 16, 'word-bits': 16, 'write_bandwidth': 16, 'technology': '45nm'}, 'class': 'smartbuffer_SRAM', 'name': 'shared_glb'}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'attributes': {'block-size': 1, 'depth': 16, 'meshX': 14, 'width': 16, 'word-bits': 16, 'technology': '45nm'}, 'class': 'regfile', 'name': 'DummyBuffer[0..13]'}
+Info: Found non-numeric expression LPDDR4. Available bindings: {'block-size': 4, 'type': 'LPDDR4', 'width': 64, 'word-bits': 16} 
+ERROR: LPDDR4 is not a valid expression. Not setting "type" attribute in {'attributes': {'block-size': 4, 'type': 'LPDDR4', 'width': 64, 'word-bits': 16}, 'class': 'DRAM', 'name': 'DRAM'}
+Info: Parsing file tmp-accelergy.yaml for compound_components info 
+Info: primitive component file parsed:  /usr/local/share/accelergy/primitive_component_libs/soc_primitives.lib.yaml 
+Info: primitive component file parsed:  /usr/local/share/accelergy/primitive_component_libs/primitive_component.lib.yaml 
+Info: primitive component file parsed:  /usr/local/share/accelergy/primitive_component_libs/pim_primitive_component.lib.yaml 
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'block-size': 1, 'memory_depth': 12, 'memory_width': 16, 'meshX': 14, 'read_bandwidth': 2, 'word-bits': 16, 'write_bandwidth': 2, 'technology': '45nm', 'n_banks': 1, 'n_buffets': 1, 'n_rdwr_ports': 2}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'block-size': 1, 'memory_depth': 192, 'memory_width': 16, 'meshX': 14, 'read_bandwidth': 2, 'word-bits': 16, 'write_bandwidth': 2, 'technology': '45nm', 'n_banks': 1, 'n_buffets': 1, 'n_rdwr_ports': 2}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'block-size': 1, 'memory_depth': 16, 'memory_width': 16, 'meshX': 14, 'read_bandwidth': 2, 'update_fifo_depth': 2, 'word-bits': 16, 'write_bandwidth': 2, 'technology': '45nm', 'n_banks': 1, 'n_buffets': 1, 'n_rdwr_ports': 2}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'datawidth': 16, 'meshX': 14, 'technology': '45nm', 'num_pipeline_stages': 2, 'latency': '5ns'}
+Info: Found non-numeric expression 5ns. Available bindings: {'datawidth': 16, 'meshX': 14, 'technology': '45nm', 'num_pipeline_stages': 2, 'latency': '5ns'} 
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in {'datawidth': 16, 'meshX': 14, 'technology': '45nm', 'num_pipeline_stages': 2, 'latency': '5ns'}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'block-size': 4, 'memory_depth': 16384, 'memory_width': 64, 'n_banks': 32, 'read_bandwidth': 16, 'word-bits': 16, 'write_bandwidth': 16, 'technology': '45nm', 'n_buffets': 1, 'n_rdwr_ports': 2}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in {'block-size': 1, 'depth': 16, 'meshX': 14, 'width': 16, 'word-bits': 16, 'technology': '45nm', 'n_ports': 2, 'latency': '5ns'}
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in {'block-size': 1, 'depth': 16, 'meshX': 14, 'width': 16, 'word-bits': 16, 'technology': '45nm', 'n_ports': 2, 'latency': '5ns'}
+ERROR: LPDDR4 is not a valid expression. Not setting "type" attribute in {'block-size': 4, 'type': 'LPDDR4', 'width': 64, 'word-bits': 16, 'technology': '65nm'}
+Info: Found non-numeric expression 65nm. Available bindings: {'block-size': 4, 'type': 'LPDDR4', 'width': 64, 'word-bits': 16, 'technology': '65nm'} 
+ERROR: 65nm is not a valid expression. Not setting "technology" attribute in {'block-size': 4, 'type': 'LPDDR4', 'width': 64, 'word-bits': 16, 'technology': '65nm'}
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in OrderedDict([('depth', 12), ('n_banks', 1), ('n_rdwr_ports', 2), ('technology', '45nm'), ('width', 16), ('n_ports', 2), ('latency', '5ns')])
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in OrderedDict([('depth', 12), ('n_banks', 1), ('n_rdwr_ports', 2), ('technology', '45nm'), ('width', 16), ('n_ports', 2), ('latency', '5ns')])
+Info: Calculated "log(memory_depth)" = 2.4849066497880004 
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in OrderedDict([('technology', '45nm'), ('width', 2.4849066497880004), ('datawidth', 16), ('num_pipeline_stages', 1), ('latency', '5ns')])
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in OrderedDict([('technology', '45nm'), ('width', 2.4849066497880004), ('datawidth', 16), ('num_pipeline_stages', 1), ('latency', '5ns')])
+Info: Calculated "n_banks" = 1 
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in OrderedDict([('depth', 192), ('n_banks', 1), ('n_rdwr_ports', 2), ('technology', '45nm'), ('width', 16), ('n_ports', 2), ('latency', '5ns')])
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in OrderedDict([('depth', 192), ('n_banks', 1), ('n_rdwr_ports', 2), ('technology', '45nm'), ('width', 16), ('n_ports', 2), ('latency', '5ns')])
+Info: Calculated "log(memory_depth)" = 5.2574953720277815 
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in OrderedDict([('technology', '45nm'), ('width', 5.2574953720277815), ('datawidth', 16), ('num_pipeline_stages', 1), ('latency', '5ns')])
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in OrderedDict([('technology', '45nm'), ('width', 5.2574953720277815), ('datawidth', 16), ('num_pipeline_stages', 1), ('latency', '5ns')])
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in OrderedDict([('depth', 16), ('n_banks', 1), ('n_rdwr_ports', 2), ('technology', '45nm'), ('width', 16), ('n_ports', 2), ('latency', '5ns')])
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in OrderedDict([('depth', 16), ('n_banks', 1), ('n_rdwr_ports', 2), ('technology', '45nm'), ('width', 16), ('n_ports', 2), ('latency', '5ns')])
+Info: Calculated "log(memory_depth)" = 2.772588722239781 
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in OrderedDict([('technology', '45nm'), ('width', 2.772588722239781), ('datawidth', 16), ('num_pipeline_stages', 1), ('latency', '5ns')])
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in OrderedDict([('technology', '45nm'), ('width', 2.772588722239781), ('datawidth', 16), ('num_pipeline_stages', 1), ('latency', '5ns')])
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in OrderedDict([('depth', 16384), ('n_banks', 32), ('n_rdwr_ports', 2), ('technology', '45nm'), ('width', 64), ('n_rd_ports', 0), ('n_wr_ports', 0), ('latency', '5ns')])
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in OrderedDict([('depth', 16384), ('n_banks', 32), ('n_rdwr_ports', 2), ('technology', '45nm'), ('width', 64), ('n_rd_ports', 0), ('n_wr_ports', 0), ('latency', '5ns')])
+Info: Calculated "log(memory_depth)" = 9.704060527839234 
+ERROR: 45nm is not a valid expression. Not setting "technology" attribute in OrderedDict([('technology', '45nm'), ('width', 9.704060527839234), ('datawidth', 16), ('num_pipeline_stages', 1), ('latency', '5ns')])
+ERROR: 5ns is not a valid expression. Not setting "latency" attribute in OrderedDict([('technology', '45nm'), ('width', 9.704060527839234), ('datawidth', 16), ('num_pipeline_stages', 1), ('latency', '5ns')])
+Info: Calculated "n_banks" = 32 
+Info: estimator plug-in identified by:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti.estimator.yaml 
+Info: estimator plug-in identified by:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-aladdin-plug-in/aladdin.estimator.yaml 
+Info: estimator plug-in identified by:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-table-based-plug-ins/table.estimator.yaml 
+table-based-plug-ins Identifies a set of tables named:  test_tables
+table-based-plug-ins Identifies a set of tables named:  memristor_tables
+table-based-plug-ins Identifies a set of tables named:  32nm_tables
+Info: estimator plug-in identified by:  /usr/local/share/accelergy/estimation_plug_ins/dummy_tables/dummy.estimator.yaml 
+Info: CACTI plug-in... Querying CACTI for request:
+ {'class_name': 'SRAM', 'attributes': OrderedDict([('depth', 16384), ('n_banks', 32), ('n_rdwr_ports', 2), ('technology', '45nm'), ('width', 64), ('n_rd_ports', 0), ('n_wr_ports', 0), ('latency', '5ns')]), 'action_name': 'write', 'arguments': {'address_delta': 0, 'data_delta': 0}}
+copy  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg  to  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-mapper.03_25_02_32_13_SRAM.cfg
+CACTI plug-in removing temp file:  /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/timeloop-mapper.03_25_02_32_13_SRAM.cfg
+Warn: No action counts are specified as yaml input 
+Info: flattened architecture is saved to: ./timeloop-mapper.flattened_architecture.yaml 
+Info: energy reference table is saved to: ./timeloop-mapper.ERT.yaml 
+Info: energy reference table summary is saved to: ./timeloop-mapper.ERT_summary.yaml 
+Warn: no runtime energy estimations are generated... not generating energy_estimation.yaml 
+Info: area reference table is saved to: ./timeloop-mapper.ART.yaml 
+Info: area reference table summary is saved to: ./timeloop-mapper.ART_summary.yaml 
